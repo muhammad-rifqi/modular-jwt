@@ -6,6 +6,9 @@ use Firebase\JWT\Key;
 
 class jwt_class {
 
+    // jwt valid for 60 days (60 seconds * 60 minutes * 24 hours * 60 days)
+    // $expirationTime = $issuedAt + 60 * 60 * 24 * 60;
+    
     function get_jwt_token(){        
             
             $key = 'abc123@';
